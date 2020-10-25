@@ -16,7 +16,7 @@ export default class MemoryCard extends React.Component {
     //     // alert("clicked")
     // }
     render() {
-        var innerClass = "MemoryCard__inner"
+        let innerClass = "MemoryCard__inner"
         if (this.props.isFlipped) {
             innerClass = "flipped"
         }

@@ -4,19 +4,22 @@ import './App.css';
 
 function generateDeck() {
   var symbols = ['∆', 'ß', '£', '§', '•', '$', '+', 'ø'];
-  var deck = [];
+  let deck = [];
   var index;
-  for (let index = 0; index = 16; index++) {
-
+  for (index = 0; index < 16; index++) {
+    deck.push({isFlipped: false, symbol: symbols[index%8]})
     // const card = symbols[i]
-    let isFlipped = false
-    let symbol = symbols[index%8] 
-    const card = {isFlipped, symbol}
-    deck.push(card)
+    // let isFlipped = false
+    // let symbol = symbols[index%8] 
+    // const card = {isFlipped, symbol}
+    // deck.push(card)
     // New Card 
-    console.log(card)
-    console.log(deck)
+    // console.log(card)
   }
+  console.log(deck)
+  // let result = shuffle(deck)
+  // console.log(result)
+  // return result
   return shuffle(deck)
 }
 
@@ -31,7 +34,7 @@ function shuffle(deck) {
   return deck;
 }
 
-generateDeck()
+
 
 class App extends React.Component {
   constructor(props) {
@@ -39,16 +42,33 @@ class App extends React.Component {
     // this.state = { isFlipped: false }
     // this.symbol = { symbols[i%8] }
     // this.state.cardToFlip = {isFlipped: false}
-    this.state.deck = []
+    // this.state = ...
+    this.state = {
+      deck: generateDeck()
+    };
+    // this.deck = []
+    // this.state.deck = generateDeck()
     this.state.pickedCards = []
 }
   pickCard(cardIndex) {
-    if (this.state.deck[cardIndex] === {isFlipped: false}) {
+    if (this.state.deck[cardIndex] === {isFlipped: true}) {
+      console.log('Card is flipped');
       return;
     } 
-    var cardToFlip = this.state.deck[cardIndex];
-    // this.state.cardToFlip = {isFlipped: false}
-    this.setState({isFlipped: false})
+    var cardToFlip = {...this.state.deck[cardIndex], isFlipped: true};
+    // console.log(this.state.cardToFlip)
+    console.log(cardToFlip)
+    // this.state.isFlipped = false
+    // this.setState({isFlipped: false})
+    // cardToFlip.setState({props.isFlipped})
+    // this.state.cardToFlip = ({isFlipped: true})
+    // this.state.cardToFlip.setState({isFlipped: true})
+    // cardToFlip.setState({isFlipped: false})
+    // console.log(cardToFlip)
+    // console.log(this.state.cardToFlip)
+    // this.state.cardToFlip = {this.props.isFlipped}
+    // cardToFlip = this.props.isFlipped
+    // var cardToFlip
     var newPickedCards = this.state.pickedCards.concat(cardIndex);
     var newDeck = this.state.deck.map((card, index) => {
       if (cardIndex === index) {
@@ -75,7 +95,6 @@ class App extends React.Component {
       </div>
       <div>
       {cardsJSX.slice(4,8)}
-      1
       </div>
       <div>
       {cardsJSX.slice(8,12)}
