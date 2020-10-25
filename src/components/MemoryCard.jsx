@@ -6,27 +6,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default class MemoryCard extends React.Component {
-    constructor() {
-        super()
-        this.state = { isFlipped: false }
-    }
+    // constructor(props) {
+    //     super(props)
+    //     this.state = { isFlipped: false }
+    // }
 
-    clickHandler() {
-        this.setState({ isFlipped: !this.state.isFlipped })
-        // alert("clicked")
-    }
+    // clickHandler() {
+    //     this.setState({ isFlipped: !this.state.isFlipped })
+    //     // alert("clicked")
+    // }
     render() {
         var innerClass = "MemoryCard__inner"
-        if (this.state.isFlipped) {
+        if (this.props.isFlipped) {
             innerClass = "flipped"
         }
-        return  <div className="MemoryCard" onClick={this.clickHandler.bind(this)}>
+        return  <div className="MemoryCard" onClick={this.props.pickCard}>
                     <div className={innerClass}>
                         <div className="MemoryCard_back">
                             <img src={logo} alt="card logo"/>
                         </div>
                         <div className="MemoryCard_front">
-                            ∆
+                        {this.props.symbol}
                         </div>                       
                     </div>
                 </div>
