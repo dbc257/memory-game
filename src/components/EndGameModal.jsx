@@ -22,7 +22,7 @@ export default class EndGameModal extends Component {
             <Button variant="secondary" onClick={this.props.handleClose}>
               Close
             </Button>
-            <Button href="http://localhost:3000/" variant="success">New Game</Button>
+            <Button href="https://react-memory-card-game.netlify.app/" variant="success">New Game</Button>
           </Modal.Footer>
         </Modal>
       </>
