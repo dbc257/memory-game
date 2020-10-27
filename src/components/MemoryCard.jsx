@@ -4,15 +4,6 @@ import logo from './dc-logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class MemoryCard extends Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = { isFlipped: false }
-    // }
-
-    // clickHandler = () => {
-    //     this.setState({ isFlipped: !this.state.isFlipped })
-    //     // alert("clicked")
-    // }
     render() {
         let innerClass = "MemoryCard__inner"
         if (this.props.isFlipped) {innerClass += ' flipped'}
