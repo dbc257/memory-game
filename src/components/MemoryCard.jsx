@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './MemoryCard.css'
 import logo from './dc-logo.png'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class MemoryCard extends Component {
     render() {
