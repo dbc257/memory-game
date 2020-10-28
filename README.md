@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# memory-game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :dizzy: MEMORY CARD GAME :dizzy:
 
-## Available Scripts
+Memory Card Game was created using React.js, CSS, and React Bootstrap. It allows the user to play the Memory Game using 16 cards. After the user matches all of the 8 pairs of cards, they can start a new game via the modal that pops up after the user wins the game. The user can also start a new game by pressing the Reset Game button at the bottom of the page.
 
-In the project directory, you can run:
+## Summary
 
-### `yarn start`
+- :star: [Website Link](#website-link)
+- :star: [Screenshots](#screenshots)
+- :star: [Getting Started](#getting-started)
+- :star: [Prerequisites](#prerequisites)
+- :star: [Installing](#installing)
+- :star: [Built With](#built-with)
+- :star: [Software Developer](#software-developer)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Website-Link
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[Memory Card Game](https://react-memory-card-game.netlify.app/)
 
-### `yarn test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1425" alt="Home/Login Page" src="https://user-images.githubusercontent.com/62611599/97370951-2e7fb780-187e-11eb-98de-1b2a7d5d5798.png">
 
-### `yarn build`
+## Getting-Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to fork the project and change it to your likings. Try it out by cloning the repo to your local machine or download the zip file.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You need preferably the latest version of Chrome, and text editor.
 
-### `yarn eject`
+#### Go here for Chrome: https://www.google.com/chrome/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### VSCode is my go to: https://code.visualstudio.com/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To get started follow this guide:
+ON LINUX/UNIX
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# FOR DEVELOPMENT PURPOSES
 
-## Learn More
+In your terminal clone repo to your local machine using git clone:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git clone git@github.com:dbc257/memory-game.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Move to your newly cloned repo by entering the following in your terminal:
 
-### Code Splitting
+```
+$ cd memory-game && npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To open all project files from terminal using VSCode just tpye and enter:
 
-### Analyzing the Bundle Size
+```
+$ code .
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Built With
 
-### Making a Progressive Web App
+- React.js
+- Cascading Style Sheets (CSS)
+- React Bootstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Software Developer
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **David Carlisle**
