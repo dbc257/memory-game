@@ -28,7 +28,7 @@ Feel free to fork the project and change it to your likings. Try it out by cloni
 
 ## Prerequisites
 
-You need preferably the latest version of Chrome, and text editor.
+You will preferably need the latest version of Chrome, and a text editor.
 
 #### Go here for Chrome: https://www.google.com/chrome/
 
@@ -37,7 +37,6 @@ You need preferably the latest version of Chrome, and text editor.
 ## Installing
 
 To get started follow this guide:
-ON LINUX/UNIX
 
 #### FOR DEVELOPMENT PURPOSES
 
@@ -53,7 +52,7 @@ Move to your newly cloned repo by entering the following in your terminal:
 $ cd memory-game && npm install
 ```
 
-To open all project files from terminal using VSCode just tpye and enter:
+To open all project files from terminal using VSCode just type and enter:
 
 ```
 $ code .
